@@ -20,7 +20,7 @@ SELECT qr.deptnum
        WHERE dept.deptnum = ac.deptnum
        GROUP BY dept.deptnum
       HAVING count(ac.acnum) >= 2) qr;
--- As requested in the quiz we just need to list deptnum, so I've used subquery because we don't need to shoe the count number.              
+-- As requested in the quiz we just need to list deptnum, so I've used subquery because we don't need to show the count number.              
 
 ------------------------------Q5------------------------------
 SELECT * 
@@ -73,4 +73,4 @@ SELECT qr.fieldnum, qr.title
           AND ac.deptnum = 100
         GROUP BY fi.fieldnum , fi.title
         HAVING count(inst.acnum) >= 1) qr;
--- As requested in the quiz we just need to list fieldnum and title, so I've used subquery because we don't need to shoe the count number.        
+-- As requested in the quiz we just need to list fieldnum and title, so I've used subquery because we don't need to show the count number.        
